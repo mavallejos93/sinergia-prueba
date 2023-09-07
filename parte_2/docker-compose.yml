@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  sinergia_web:
+    container_name: sinergia-test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sinergia-test:latest
+    ports:
+      - "8080:80"
+
+  apiDB:
+    restart: unless-stopped
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sinergia_db
+    ports:
+      - 5432:5432
+    volumes:
+      - ./database-folder-postgres-api:/var/lib/postgresql/data
+    
