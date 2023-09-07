@@ -2,8 +2,8 @@
 prueba tecnica sinergia
 
 PARTE 1
-
-
+(intento 1) crear por medio de terraform un servidor jenkins
+(intento 2) se creo un flujo en github para funcionar por medio de fargate en ECS, workflows githubactions
 
 PARTE 2
 
