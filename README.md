@@ -28,3 +28,5 @@ user: postgres
 password: postgres
 db: sinergia_db
 
+la db crea un volumen local para persistencia de los datos
+
